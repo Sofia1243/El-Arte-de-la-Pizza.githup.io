@@ -1,0 +1,621 @@
+ 
+ /* Barra de navegación */
+.navbar {
+    background-color: #f02323 ;  /* Rosita suave */
+    padding: 10px 0;
+    text-align: center;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    background-color:#ee1414  ;  /* Naranja suave */
+    border-radius: 5px;
+}
+
+/* Estilos para el inicio */
+.inicio {
+    background-color: #fef0f3;  /* Fondo rosita suave */
+    padding: 40px;
+    text-align: center;
+    color: #2c3e50;
+    border-bottom: 3px solid #e9895d;  /* Naranja suave */
+}
+
+.inicio h1 {
+    font-size: 2.8rem;
+    color: #f5a623;  /* Naranja suave */
+    margin-bottom: 20px;
+    text-shadow: 2px 2px #f9e79f;  /* Rosita claro */
+}
+
+.inicio p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.inicio h3 {
+    font-size: 1.6rem;
+    color: #f5a623;  /* Naranja suave */
+    margin-bottom: 10px;
+}
+
+.inicio ul {
+    list-style: none;
+    padding: 0;
+}
+
+.inicio ul li {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    color: #34495e;
+    background: #f9e79f;  /* Amarillo suave */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Estilos para los botones */
+.btn-inicio, .btn-ingredientes {
+    padding: 12px 24px;
+    background-color: #f5a623;  /* Naranja suave */
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 10px;
+}
+
+.btn-inicio:hover, .btn-ingredientes:hover {
+    background-color: #e67e22;  /* Naranja un poco más oscuro */
+    transform: scale(1.1);
+}
+
+ 
+
+/* Estilos para el paso a paso */
+.paso-a-paso {
+    background-color: #fef0f3;  /* Fondo rosita suave */
+    padding: 30px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.paso-a-paso h2 {
+    font-size: 2rem;
+    color: #f5a623;  /* Naranja suave */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.paso-a-paso ol {
+    padding-left: 20px;
+}
+
+.paso-a-paso li {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #34495e;
+    margin-bottom: 15px;
+}
+
+
+ 
+
+/* Estilos para la sección Paso a paso */
+.paso-a-paso {
+    background-color: #fff5f5; /* Color de fondo suave */
+    padding: 40px 20px; /* Espaciado y relleno */
+    text-align: center;
+    color: #2c3e50; /* Color oscuro para el texto */
+    border-top: 3px solid #f11919; /* Borde superior en color rosa */
+    border-bottom: 3px solid #f11919; /* Borde inferior en color rosa */
+}
+
+.paso-a-paso h2 {
+    font-size: 2rem;
+    color: #f11919; /* Título con color rosa */
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Sombra suave para el título */
+}
+
+.paso-a-paso ol {
+    list-style-position: inside; /* Listas numeradas dentro */
+    margin: 0;
+    padding: 0;
+}
+
+.paso-a-paso ol li {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    background-color: #f9e79f; /* Fondo suave y cálido para cada paso */
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para dar relieve */
+}
+
+.paso-a-paso ol li b {
+    font-weight: bold;
+    color: #e74c3c; /* Color rojo para las partes importantes */
+}
+
+.paso-a-paso ol li:nth-child(even) {
+    background-color: #fdebd0; /* Alternancia de colores para cada paso */
+}
+
+.paso-a-paso ol li:hover {
+    background-color: #f7c9c9; /* Efecto hover para un cambio de color al pasar el ratón */
+    cursor: pointer;
+    transform: translateY(-5px); /* Levantar ligeramente el paso al pasar el cursor */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Transición suave */
+}
+
+
+/* Estilos para la sección de Información Nutricional */
+.informacion-nutricional {
+    background-color: #f1f1f1; /* Fondo gris suave */
+    padding: 40px 20px;
+    text-align: center;
+    color: #2c3e50;
+    border-top: 3px solid #f11919; /* Borde superior en color rosa */
+}
+
+.informacion-nutricional h2 {
+    font-size: 2rem;
+    color: #f11919; /* Título en color rosa */
+    margin-bottom: 20px;
+}
+
+.tabla-nutricional {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #fff;
+}
+
+.tabla-nutricional th, .tabla-nutricional td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd; /* Borde suave */
+}
+
+.tabla-nutricional th {
+    background-color: #f11919;
+    color: white;
+    font-weight: bold;
+}
+
+.tabla-nutricional tr:nth-child(even) {
+    background-color: #f9e79f; /* Fila alternada en amarillo suave */
+}
+
+.tabla-nutricional tr:nth-child(odd) {
+    background-color: #fdebd0; /* Fila alternada más clara */
+}
+
+.tabla-nutricional td {
+    font-size: 1.1rem;
+    color: #2c3e50;
+}
+
+.informacion-nutricional i {
+    font-style: italic;
+    color: #7f8c8d; /* Color gris para el texto adicional */
+}
+
+
+/* Estilos para el Footer */
+.footer {
+    background-color:#f02323  ; /* Fondo oscuro */
+    color: #fff; /* Texto blanco */
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.footer-container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.footer p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.social-links {
+    margin-top: 10px;
+}
+
+.social-icon {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #f11919; /* Color de hover en rosa */
+}
+
+.instagram:hover {
+    color: #e1306c; /* Color para Instagram */
+}
+
+.twitter:hover {
+    color: #1da1f2; /* Color para Twitter */
+}
+
+.facebook:hover {
+    color: #1877f2; /* Color para Facebook */
+}
+
+
+/* Barra de navegación */
+.navbar {
+    background-color:#f02323  ;  /* Un tono cálido similar al naranja de la pizza */
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.navbar-menu li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.nav-item:hover {
+    background-color: #f39c12;  /* Un naranja más claro para el hover */
+    transform: scale(1.1);
+}
+
+/* Diseño responsivo para pantallas pequeñas */
+@media (max-width: 768px) {
+    .navbar-menu {
+        text-align: left;
+    }
+    
+    .navbar-menu li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+
+/* Estilos para la sección de contacto */
+.contacto {
+    background-color: #fdf3e3;  /* Manteniendo la gama de colores cálidos */
+    padding: 40px;
+    text-align: center;
+    color: #2c3e50;
+    border-top: 3px solid #e74c3c;
+}
+
+.contacto h2 {
+    font-size: 2.5rem;
+    color: #e74c3c;
+    margin-bottom: 20px;
+}
+
+.contacto p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.contacto form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contacto label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    text-align: left;
+    width: 100%;
+    max-width: 500px;
+}
+
+.contacto input, .contacto textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contacto button {
+    padding: 12px 24px;
+    background-color: #e74c3c;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.contacto button:hover {
+    background-color: #c0392b;
+    transform: scale(1.05);
+}
+
+/* Estilos para la información de contacto */
+.info-contacto {
+    margin-top: 30px;
+    text-align: left;
+    font-size: 1rem;
+    color: #34495e;
+}
+
+.info-contacto ul {
+    list-style: none;
+    padding: 0;
+}
+
+.info-contacto ul li {
+    margin-bottom: 15px;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+}
+
+.social-links li {
+    display: inline;
+    margin-right: 15px;
+}
+
+.social-links li a {
+    color: #e74c3c;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.social-links li a:hover {
+    color: #c0392b;
+}
+
+ 
+
+
+/* Estilo para la barra de navegación */
+.navbar {
+    background-color: #f11919;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    background-color: #e74c3c;
+    border-radius: 5px;
+}
+
+/* Estilo para el logo con solo texto */
+.navbar .logo a {
+    font-size: 2rem;  /* Aumentamos el tamaño del texto */
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;  /* Hacemos las letras en mayúsculas */
+    font-family: 'Pacifico', cursive;  /* Usamos una fuente estilizada */
+    letter-spacing: 2px;  /* Espaciado entre las letras */
+    text-decoration: none;
+}
+
+
+
+/* Estilo para el botón */
+.btn-inicio {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f11919;  /* Rojo similar al de la barra de navegación */
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;  /* Bordes redondeados */
+    text-align: center;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-inicio:hover {
+    background-color: #e74c3c;  /* Color más suave al pasar el cursor */
+    transform: scale(1.05);  /* Aumenta el tamaño ligeramente */
+}
+
+.btn-inicio:active {
+    background-color: #c0392b;  /* Color al hacer clic */
+}
+
+
+
+
+/* Estilos para la sección de Ingredientes */
+.ingredientes {
+    background-color: #f8f9fa;  /* Fondo claro para la sección */
+    padding: 20px;
+    margin: 30px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  /* Sombra sutil */
+}
+
+.ingredientes h2 {
+    font-size: 2rem;  /* Tamaño grande para el título */
+    color: #3e4a59;  /* Color oscuro para el título */
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+.ingredientes p {
+    font-size: 1.1rem;  /* Un tamaño adecuado para los subtítulos */
+    color: #3e4a59;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.ingredientes ul {
+    list-style-type: none;  /* Eliminamos los puntos por defecto */
+    padding: 0;
+    margin-top: 10px;
+}
+
+.ingredientes ul li {
+    font-size: 1rem;  /* Tamaño de fuente claro y legible */
+    color: #555;  /* Un color gris oscuro */
+    margin: 8px 0;
+    line-height: 1.5;  /* Aumento del espacio entre líneas para mejorar la legibilidad */
+    font-family: 'Arial', sans-serif;
+}
+
+.ingredientes ul li::before {
+    content: "🍕";  /* Un ícono de pizza antes de cada ingrediente */
+    margin-right: 10px;
+    font-size: 1.2rem;
+    vertical-align: middle;
+}
+
+.ingredientes ul li:last-child {
+    margin-bottom: 0;  /* Quitamos el margen inferior de la última lista */
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .ingredientes {
+        padding: 15px;
+        margin: 15px 0;
+    }
+
+    .ingredientes h2 {
+        font-size: 1.8rem;  /* Reducimos el tamaño del título en pantallas pequeñas */
+    }
+
+    .ingredientes p {
+        font-size: 1rem;
+    }
+
+    .ingredientes ul li {
+        font-size: 0.9rem;  /* Ajuste de tamaño de fuente para dispositivos pequeños */
+    }
+}
+
+
+
+ .navbar-toggler-icon {
+width: 24px;
+height: 24px;
+ }
+
+
+ 
+
+/* Barra de navegación general */
+.navbar {
+    background-color: #f11919 !important;
+    padding: 10px 15px;
+  }
+  
+  /* Botón hamburguesa */
+  .navbar-toggler {
+    border: none;
+  }
+  
+  .navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;charset=UTF8,%3Csvg xmlns="http://www.w3.org/2000/svg" fill="%23ffffff" viewBox="0 0 30 30"%3E%3Cpath stroke="rgba(255, 255, 255, 1)" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"%3E%3C/path%3E%3C/svg%3E');
+  }
+  
+  /* Enlaces del menú */
+  .nav-link {
+    color: white !important;
+    font-size: 18px;
+    padding: 10px;
+    text-transform: uppercase;
+  }
+  
+  /* Estilos específicos para pantallas grandes */
+  @media (min-width: 992px) {
+    .navbar-nav {
+      flex-direction: row;
+    }
+  
+    .nav-link {
+      padding: 0 15px;
+    }
+  }
+  
+  /* Fondo del menú colapsado en pantallas pequeñas */
+  .collapse {
+    background-color: #f11919;
+  }
+  
